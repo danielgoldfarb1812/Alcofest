@@ -1,0 +1,40 @@
+@font-face {
+    font-family: beautifulFontH1;
+    src: url(/fonts/MoonGarden-4BdL4.ttf);
+    
+}
+@font-face {
+    font-family: beautifulFontH2;
+    src: url(/fonts/MetildaDemo-2Ol53.otf);
+}
+body{
+    background-image: url(/images/backround.jpg);
+    background-size: 100 100;
+    background-attachment: fixed;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+}
+#cart-icon{
+    height: 50px;
+    width: 50px;
+}
+h1{
+    color: white;
+    font-size: 5em;
+    font-family: beautifulFontH1;
+}
+h2{
+    color: white;
+    font-family: beautifulFontH2;
+}
+h3{
+    color: white;
+}

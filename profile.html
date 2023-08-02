@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/profile.css">
+    <script src="/js/products.js"></script>
+    <script src="/js/User.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body onload="UserInfo()">
+    <header class="p-3 mb-3 border-bottom" id="header" style="background-color:white;">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                </a>
+                <a href="/cart.html"><img id="cart-icon" src="/images/cart-icon.png" alt=""></a>
+                <div class="col-md-3 text-end" id="hp1">
+                    <a href="/login.html" class="btn btn-outline-primary me-2" role="button">Login</a>
+                    <a href="/registration.html" class="btn btn-primary" role="button">Register</a>
+                </div>
+                <div class="col-md-3 text-end" id="hp2">
+                    <a href="profile.html"><img id="image_login_user" src="" alt="" srcset="" style="width:100px"></a>
+                    <button id="disconnect">Logout</button>
+                </div>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="ul">
+                    <li><a href="/shop.html" class="nav-link px-2 link-dark">Shop</a></li>
+                    <li><a href="/cart.html" class="nav-link px-2 link-dark">Cart</a></li>
+                </ul>
+                <a href="/index.html"><img src="/images/beer-logo.png" alt="" id="logo"></a>
+
+            </div>
+        </div>
+    </header>
+          
+        <div class="profileCont">
+            <h1 id="title" style="text-align: center;">User Profile</h1><br>
+            <div class="col-md-6" style="display: flex; margin: auto;">
+                <div style="margin-right: 10%; background-color: rgb(255, 255, 255);">
+                    <div class="row g-0 overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="profile_pic" style="width: 600px; ">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <h3 class="mb-0" id="profile_email">Email address: </h3>
+                            <strong style="color: black;"  id="profile_user">Name: </strong>
+                            <div class="mb-1" id="profile_address">Home address: </div>
+                            <p class="card-text mb-auto" id="profile_date">Date of birth: </p>
+                            <div>
+                                <img src="" alt="" class="logoPro" id="logo_Pro">
+                            </div>
+                        </div>
+                        <div>
+                            <a href="update.html" role="button" class="btn btn-primary" id="updateUserInfo" style="background-color:gray; border-color:gray">Update details</a>
+                            <a href="bingo.html" role="button" class="btn btn-primary" style="background-color:blue; border-color:blue">Bingo game</a>
+                            <a role="button" class="btn btn-primary" id="logOut" style="background-color:red; border-color:red">Logout</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <footer class="p-3 border-bottom" id="footer" style="background-color:white; position: fixed; width: 100%; bottom: 0;">
+            ® All rights reserved to Michal Goot and Daniel Goldfarb</footer>
+</body>
+</html>

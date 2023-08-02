@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/registration.css">
+    <script src="/js/User.js"></script>
+    <script src="/js/products.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom" id="header" style="background-color:white;">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                </a>
+                <a href="/cart.html"><img id="cart-icon" src="/images/cart-icon.png" alt=""></a>
+                <div class="col-md-3 text-end" id="hp1">
+                    <a href="/login.html" class="btn btn-outline-primary me-2" role="button">Login</a>
+                    <a href="/registration.html" class="btn btn-primary" role="button">Register</a>
+                </div>
+                <div class="col-md-3 text-end" id="hp2">
+                  <a href="profile.html"><img id="image_login_user" src="" alt="" srcset="" style="width:100px"></a>
+                    <button id="disconnect">Logout</button>
+                </div>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="ul">
+                  <li><a href="/shop.html" class="nav-link px-2 link-dark">Shop</a></li>
+                  <li><a href="/cart.html" class="nav-link px-2 link-dark">Cart</a></li>
+                </ul>
+                <a href="/index.html"><img src="/images/beer-logo.png" alt="" id="logo"></a>
+
+            </div>
+        </div>
+    </header>
+    <div class="container" style="width: 50%;">
+        <b><h1 class="h3 mb-3 font-weight-normal">Registration Page</h1></b>
+          <h2 class="h3 mb-3 font-weight-normal">Please fill out the following fields:</h2>
+          <div class="col-md-7 col-lg-8">
+              <form class="needs-validation" id="register_form">
+                <div class="row g-3">
+                  <div class="col-12">
+                      <div id="form_input">
+                    <label class="form-label">Username</label>
+                      <input style="width: 300px; margin: auto;" type="text" class="form-control" id="user_name" required autofocus>
+                    </div>
+                  </div>
+  
+                  <div class="col-12">
+                      <div id="form_input">
+                    <label class="form-label">Password</label>
+                    <input style="width: 300px; margin: auto;" type="password" class="form-control" id="password" required>
+                    <div class="invalid-feedback">
+                    </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12">
+                      <div id="form_input">
+                    <label class="form-label">Confirm password</label>
+                    <input style="width: 300px; margin: auto;" type="password" class="form-control" id="password_confirm" required>
+                    <div class="invalid-feedback">
+                    </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-12">
+                      <div id="form_input">
+                    <label class="form-label">Select profile picture</label>
+                    <input style="width: 300px; margin: auto;" class="form-control" id="user_image" type="file" accept="image/jpg, image/jpeg" required>
+                    <div class="invalid-feedback">
+                    </div>
+                    <div class="form-input">
+                      <img id="profile_img" class="images" src="" alt="תמונת פרופיל" style="width: 100px; display: none;" />
+                  </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-sm-6">
+                      <div id="form_input">
+                    <label class="form-label">First name</label>
+                    <input style="width: 300px; margin: auto;" type="text" class="form-control" id="user_first_name" required>
+                    <div class="invalid-feedback">
+                  </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-6">
+                      <div id="form_input">
+                    <label class="form-label">Last name</label>
+                    <input style="width: 300px; margin: auto;" type="text" class="form-control" id="user_last_name" required="">
+                    <div class="invalid-feedback">
+                    </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12">
+                      <div id="form_input">
+                    <label class="form-label">Email address</label>
+                    <input style="width: 500px; margin: auto;" type="email" class="form-control" id="user_email" required>
+                    <div class="invalid-feedback">
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-12">
+                      <div id="form_input">
+                    <label class="form-label">Date of birth</label>
+                    <input style="width: 300px; margin: auto;" type="date" class="form-control" id="user_birthdate" required>
+                  </div>
+                  </div>
+  
+                  <div class="col-12">
+                    <div class="autocomplete form_input" style="width:300px;">
+                        <label class="form-label" for="city">City</label>
+                        <input type="text" class="form-control" id="user_city" list="cities" required>
+                        <datalist id="cities"></datalist>
+                      </div>
+                  </div>
+      
+                  <div>
+                      <div id="form_input">
+                    <label class="form-label">Street</label>
+                    <input style="width: 300px; margin: auto;" type="text" class="form-control" id="user_street" required>
+                  </div>
+      
+                  <div>
+                    <label class="form-label">Street number</label>
+                    <input style="width: 100px; margin: auto;" type="text" class="form-control" id="user_street_number" required>
+                  </div>
+  
+                  <div class="form_input"><br>
+                      <button class="btn btn-primary" type="submit">Register!</button>
+                      <button class="btn btn-outline-primary me-2" type="reset">Clear all fields</button><br><br>
+                  </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+      </div>
+      <footer class="p-3  border-bottom" id="footer"
+      style="background-color:white; width: 100%; position: relative; bottom: 0;">® All rights reserved to Michal Goot
+      and Daniel Goldfarb</footer>
+      
+</body>
+
+</html>

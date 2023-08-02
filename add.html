@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add product page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/add.css">
+<script src="../js/products.js"></script>
+<script src="../js/User.js"></script>
+<script src="../js/functions.js"></script>
+<script src="../js/main.js" defer></script>
+</head>
+<body>
+  <header class=" border-bottom" id="header" style="background-color:white; height: 18vh;">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            </a>
+            <a href="/cart.html"><img id="cart-icon" src="/images/cart-icon.png" alt=""></a>
+            <div class="col-md-3 text-end" id="hp1">
+                <a href="/login.html" class="btn btn-outline-primary me-2" role="button">Login</a>
+                <a href="/registration.html" class="btn btn-primary" role="button">Register</a>
+            </div>
+            <div class="col-md-3 text-end" id="hp2">
+                <a href="profile.html"><img id="image_login_user" src="" alt="" srcset="" style="width:100px"></a>
+                <button id="disconnect">Logout</button>
+            </div>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="ul">
+                <li><a href="/shop.html" class="nav-link px-2 link-dark">Shop</a></li>
+                <li><a href="/cart.html" class="nav-link px-2 link-dark">Cart</a></li>
+            </ul>
+            <a href="/index.html"><img src="/images/beer-logo.png" alt="" id="logo"></a>
+
+        </div>
+    </div>
+</header>
+    <div class="container" style="width: 50%; margin-top: 5px;">
+        <b><h1 class="h3 mb-3 font-weight-normal">Add a new product to our stock</h1></b>
+        <h2 class="h3 mb-3 font-weight-normal">Please fill in the required fields:</h2>
+        <div class="col-md-7 col-lg-8">
+            <form class="needs-validation" id="add_product">
+              <div class="row g-3">
+                <div class="col-12">
+                    <div id="form_input">
+                  <label class="form-label">Product ID</label>
+                  <div class="input-group has-validation">
+                    <input type="number" class="form-control" id="number" required>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="col-12">
+                    <div id="form_input">
+                  <label class="form-label">Product Name</label>
+                  <input type="text" class="form-control" id="name" required>
+                  <div class="invalid-feedback">
+                  </div>
+                  </div>
+                </div>
+  
+                <div class="col-12">
+                    <div id="form_input">
+                  <label class="form-label">Product Price</label>
+                  <input type="number" class="form-control" id="price" required>
+                  <div class="invalid-feedback">
+                  </div>
+                  </div>
+                </div>
+  
+                
+                <div class="col-12">
+                    <div id="form_input">
+                  <label class="form-label">Product Image</label>
+                  <input class="form-control" id="image" type="file" accept="image/*" required>
+                  <div class="invalid-feedback">
+                  </div>
+                  <div class="form-input">
+                    <img id="add_product_img" class="images" src="" alt="תמונת מוצר חדש" style="width: 100px; display: none;" />
+                </div>
+                  </div>
+                </div>
+  
+    
+                <div class="col-sm-6">
+                    <div id="form_input">
+                  <label class="form-label">Product Description</label>
+                  <input type="text" class="form-control" id="description">
+                  <div class="invalid-feedback">
+                  </div>
+                  </div>
+                </div>
+  
+                <div class="col-12">
+                    <div id="form_input">
+                  <label class="form-label" >Category: </label><br>
+                  <div style="display: flex; justify-content: space-around;">
+                    <input type="radio" name="category_add" class="category_add" data-string="beers"><p class="label">Beers</p></input>
+                    <input type="radio" name="category_add" class="category_add" data-string="vodka"><p class="label">Vodkas</p></input>
+                    <input type="radio" name="category_add" class="category_add" data-string="wine"><p class="label">Wines</p></input>
+                    <input type="radio" name="category_add" class="category_add" data-string="whiskey"><p class="label">Whiskeys</p></input>
+                    <input type="radio" name="category_add" class="category_add" data-string="cognac"><p class="label">Cognac</p></input>
+                    <input type="radio" name="category_add" class="category_add" data-string="cocktails"><p class="label">Cocktails</p></input>
+                  </div>
+                  <div class="invalid-feedback">
+                    </div>
+                  </div>
+                </div><br>
+  
+                <button id="add_button" class="btn btn-primary" style="width: 200px;" type="submit">Add product to stock</button>
+            </form>
+          </div>
+          <br>
+        </div>
+
+</body>
+</html>

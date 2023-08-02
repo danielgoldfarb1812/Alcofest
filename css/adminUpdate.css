@@ -1,0 +1,43 @@
+@font-face{
+    font-family: beautifulFont;
+    src: url(/fonts/LibraryRecordsRegular-qZW66.ttf)
+}
+body{
+    background-image: url(/images/backround.jpg);
+    background-size: 100 100;
+    background-attachment: fixed;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+}
+#cart-icon{
+    height: 50px;
+    width: 50px;
+}
+.invalid{
+    background-color: red;
+}
+h1{
+    font-family: beautifulFont;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+form{
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    margin: auto;
+    width: 50vw;
+}
+.autocomplete{
+    margin: auto;
+    position: relative;
+    display: inline-block;
+}

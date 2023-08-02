@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/products.js"></script>
+    <script src="/js/User.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom" id="header" style="background-color:white;">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                </a>
+                <a href="/cart.html"><img id="cart-icon" src="/images/cart-icon.png" alt=""></a>
+                <div class="col-md-3 text-end" id="hp1">
+                    <a href="/login.html" class="btn btn-outline-primary me-2" role="button">Login</a>
+                    <a href="/registration.html" class="btn btn-primary" role="button">Register</a>
+                </div>
+                <div class="col-md-3 text-end" id="hp2">
+                    <a href="profile.html"><img id="image_login_user" src="" alt="" srcset="" style="width:100px"></a>
+                    <button id="disconnect">Logout</button>
+                </div>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="ul">
+                    <li><a href="/shop.html" class="nav-link px-2 link-dark">Shop</a></li>
+                    <li><a href="/cart.html" class="nav-link px-2 link-dark">Cart</a></li>
+                </ul>
+                <a href="/index.html"><img src="/images/beer-logo.png" alt="" id="logo"></a>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="index-intro">
+            <div id="title-container">
+                <img class="nsfw" src="/images/nsfw.png" alt="">
+                <h1 id="title" class="display-4 fw-normal" style="text-align: center;">Alcohol Fest 2022!!!</h1>
+                <img class="nsfw" src="/images/nsfw.png" alt="">
+
+            </div>
+
+        <p  class="lead fw-normal" style="text-align: center;">Welcome to our beer shop! <br>
+            Below is just a tiny bit of what we have for sale!<br>
+            In this shop you may find everything you want to drink and enjoy after a long and exhausting day!<br>
+        </p>
+        <p style="color: red;">DISCLAIMER - do not drink and drive, or else you might end up like Mike and won't be able
+            to cut hair anymore</p>
+        <p style="color: red; font-weight: bold;">YOU HAVE BEEN WARNED</p>
+    </div><br><br><br>
+    <div class="container" style="margin-left: 20vw;">
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" style="padding-right: 14%;">
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 40%;">
+                <div class="my-3 p-3">
+                    <h2 class="display-5" style="font-size: 20px;">Carlsberg that means business</h2>
+                    <p class="lead"><img src="/images/carlsberg-six-pack.jpg" alt=""
+                            style="width: 100px; height: 100px;"></p>
+                    <p style="color: black;"><b>39 ₪</b></p>
+                    <a href="product.html?id=1113" data-id="1113" class="btn btn-primary" role="button"
+                        style="background-color: black; border-color: black;">Go to product page</a>
+                </div>
+            </div>
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 40%;">
+                <div class="my-3 p-3">
+                    <h2 class="display-5" style="font-size: 20px;">Corona - not a virus</h2>
+                    <p class="lead"><img src="/images/corona-six-pack.jpg" alt="" style="width: 100px; height: 100px;">
+                    </p>
+                    <p style="color: black;"><b>39 ₪</b></p>
+                    <a href="product.html?id=1111" data-id="1111" class="btn btn-primary" role="button"
+                        style="background-color: black; border-color: black;">Go to product page</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" style="padding-right: 14%;">
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 40%;">
+                <div class="my-3 py-3">
+                    <h2 class="display-5" style="font-size: 20px;">Baltika - Russian behemoth</h2>
+                    <p class="lead"><img src="/images/baltika-pack.jpg" alt="" style="width: 100px; height: 100px;"></p>
+                    <p style="color: black;"><b>59 ₪</b></p>
+                    <a href="product.html?id=1117" data-id="1117" class="btn btn-primary" role="button"
+                        style="background-color: black; border-color: black;">Go to product page</a>
+                </div>
+            </div>
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width: 40%;">
+                <div class="my-3 p-3">
+                    <h2 class="display-5" style="font-size: 20px;">Smirnoff - because beer is for the weak</h2>
+                    <p class="lead"><img src="/images/smirnoff.png" alt="" style="width: 100px; height: 100px;"></p>
+                    <p style="color: black;"><b>79 ₪</b></p>
+                    <a href="product.html?id=1128" data-id="1128" class="btn btn-primary" role="button"
+                        style="background-color: black; border-color: black;">Go to product page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="p-3 border-bottom" id="footer" style="background-color:white; position: fixed; width: 100%; bottom: 0;">
+        ® All rights reserved to Michal Goot and Daniel Goldfarb</footer>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@font-face{
+    font-family: beautifulFont;
+    src: url(/fonts/BackToSchoolPersonalUseRegular-w1xX2.ttf)
+}
+body{
+    background-image: url(/images/profile-background.jpg);
+    background-size: 100 100;
+    background-attachment: fixed;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+}
+#cart-icon{
+    height: 50px;
+    width: 50px;
+}
+#title{
+    font-family: beautifulFont;
+    color: white;
+}
+.logoPro{
+    margin-left: 25vw;
+    height: 180px;
+    width: 180px;
+}
+

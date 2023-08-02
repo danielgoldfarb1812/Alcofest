@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/shop.css">
+    <script src="../js/products.js"></script>
+    <script src="../js/User.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom" id="header" style="background-color:white;">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                </a>
+                <a href="/cart.html"><img id="cart-icon" src="/images/cart-icon.png" alt=""></a>
+                <div class="col-md-3 text-end" id="hp1">
+                    <a href="/login.html" class="btn btn-outline-primary me-2" role="button">Login</a>
+                    <a href="/registration.html" class="btn btn-primary" role="button">Register</a>
+                </div>
+                <div class="col-md-3 text-end" id="hp2">
+                    <a href="profile.html"><img id="image_login_user" src="" alt="" srcset="" style="width:100px"></a>
+                    <button id="disconnect">Logout</button>
+                </div>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="ul">
+                    <li><a href="/shop.html" class="nav-link px-2 link-dark">Shop</a></li>
+                    <li><a href="/cart.html" class="nav-link px-2 link-dark">Cart</a></li>
+                </ul>
+                <a href="/index.html"><img src="/images/beer-logo.png" alt="" id="logo"></a>
+
+            </div>
+        </div>
+    </header>
+    <div style="margin: auto;" id="shop">
+        <div class="container">
+            <h1>Find items</h1><br><br>
+            <div style="margin: auto;">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <label id="max-price" for="price_shop">Maximum price: </label>
+                    <input class="price" id="price_shop" type="number" value="">
+                    <button type="submit" id="Search">Search</button>
+                </div>
+                <div style="display: flex; justify-content: center; align-content: center;">
+                    <label class="item-label" for="item-label">Show All</label>
+                    <input id="show_all" type="radio" class="category item-label" data-category="beers" onclick="FilterSelection('')" name="alcohol" checked="checked" ></input>
+                    <label class="item-label" for="item-label">Beers</label>
+                    <input type="radio" class="category item-label" data-category="beers" onclick="FilterSelection('beers')" name="alcohol"></input>
+                    <img class="item-logo" src="/images/beer-item.png" alt="">
+                    <label class="item-label" for="item-label">Vodkas</label>
+                    <input type="radio" class="category item-label" data-category="vodka" onclick="FilterSelection('vodka')" name="alcohol"></input>
+                    <img class="item-logo" src="/images/vodka.png" alt="">
+                    <label class="item-label" for="item-label">Wines</label>
+                    <input type="radio" class="category item-label" data-category="wine" onclick="FilterSelection('wine')" name="alcohol"></input>
+                    <img class="item-logo" src="/images/wine-item.png" alt="">
+                    <label class="item-label" for="item-label">Whiskeys</label>
+                    <input type="radio" class="category item-label" data-category="whiskey" onclick="FilterSelection('whiskey')" name="alcohol"></input>
+                    <img class="item-logo" src="/images/whiskey-item.png" alt="">
+                    <label class="item-label" for="item-label">Cognac</label>
+                    <input type="radio" class="category item-label" data-category="cognac" onclick="FilterSelection('cognac')" name="alcohol"></input>
+                    <img class="item-logo" src="/images/cognac-item.png" alt="">
+                    <label class="item-label" for="item-label">Cocktails</label>
+                    <input type="radio" class="category item-label" data-category="cocktails" onclick="FilterSelection('cocktails')" name="alcohol"></input>
+                    <img class="item-logo" src="/images/cocktail-item.png" alt="">
+                </div>
+
+            </div><br>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="product_shop">
+            </div>
+        </div>
+            <footer class="p-3  border-bottom" id="footer"
+                style="background-color:white; position: fixed; width: 100%; bottom: 0;">® All rights reserved to
+                Michal Goot
+                and Daniel Goldfarb</footer>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bingo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="/js/bingo-funcs.js"></script>
+    <script src="/js/bingo-main.js" defer></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/User.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/main.js" defer></script>
+
+    <title>Bingo!!!</title>
+</head>
+
+<body id="body">
+    <header class=" border-bottom" id="header" style="background-color:white; height: 18vh;">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                </a>
+                <a href="/cart.html"><img id="cart-icon" src="/images/cart-icon.png" alt=""></a>
+                <div class="col-md-3 text-end" id="hp1">
+                    <a href="/login.html" class="btn btn-outline-primary me-2" role="button">Login</a>
+                    <a href="/registration.html" class="btn btn-primary" role="button">Register</a>
+                </div>
+                <div class="col-md-3 text-end" id="hp2">
+                    <a href="profile.html"><img id="image_login_user" src="" alt="" srcset="" style="width:100px"></a>
+                    <button id="disconnect">Logout</button>
+                </div>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="ul">
+                    <li><a href="/shop.html" class="nav-link px-2 link-dark">Shop</a></li>
+                    <li><a href="/cart.html" class="nav-link px-2 link-dark">Cart</a></li>
+                </ul>
+                <a href="/index.html"><img src="/images/beer-logo.png" alt="" id="logo"></a>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <h1 id="congratulations_win" class="hide">Congratulations</h1>
+
+        <div id="winning_sequence" class="hide">Winning </div>
+        <div id="numbers" id="fallingnumbers" class="hide"></div>
+        <h1 id="lets_play">Welcome to our Bingo game!</h1>
+        <h1 class="hide" id="loss">You lose</h1>
+        <div id="exit_div" class="hide">
+            <button id="exit_btn">Return to main menu</button>
+        </div>
+        <form id="form" action="">
+            <label id="label_content" for="">Select board size</label><br><br><br><br>
+            <input type="radio" name="size" id="3" value=3>3X3 (Very hard)
+            <input type="radio" name="size" id="4" value=4>4X4 (Very hard)
+            <input type="radio" name="size" id="5" value=5>5X5 (Hard)<br><br>
+            <input type="radio" name="size" id="6" value=6>6X6 (Hard)
+            <input type="radio" name="size" id="7" value=7>7X7 (Medium)
+            <input type="radio" name="size" id="8" value=8>8X8 (Medium)<br><br>
+            <input type="radio" name="size" id="9" value=9>9X9 (Easy)<br><br>
+            <input type="button" id="create" value="Start Game">
+            <input type="button" id="reset" value="Clear">
+        </form>
+
+        <div id="invalid_input_container" class="hide">
+            <p id="invalid_input">Strikes left: </p>
+        </div>
+        <div id="input_container" class="hide">
+            <input type="button" id="draw_number" value="Draw number" class="hide">
+            <div id="cell" class="hide "></div>
+            <input type="button" id="go" value="Go" class="hide">
+        </div>
+
+        <div id="game_div">
+            <div id="player_table_div">
+                <table id="player_table" class="hide"></table>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
